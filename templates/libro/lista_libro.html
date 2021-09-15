@@ -1,0 +1,28 @@
+
+
+<h1>lista de Libros</h1>
+
+<p>
+    <form method="GET">
+
+        <input type="text" placeholder="Ingrese el Nombre" id="kword" name="kword">
+        <input type="date" name="fecha1" id="fecha1">
+        <input type="date" name="fecha2" id="fecha2">
+        <button type="summit">Consultar</button>
+
+
+    </form>
+
+</p>
+
+
+<ul>
+    
+    {% for lista in lista_libros %}
+    <li>{{lista.titulo}} - {{lista.fecha}}</li>
+        
+    {% endfor %}
+        
+
+
+</ul>
